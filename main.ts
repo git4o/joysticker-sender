@@ -1,23 +1,30 @@
 WSJoyStick.onKey(KEY.F, function () {
     radio.sendNumber(7)
+    basic.showNumber(7)
 })
 WSJoyStick.onKey(KEY.A, function () {
     radio.sendNumber(2)
+    basic.showNumber(2)
 })
 WSJoyStick.onKey(KEY.P, function () {
     radio.sendNumber(1)
+    basic.showNumber(1)
 })
 WSJoyStick.onKey(KEY.E, function () {
     radio.sendNumber(6)
+    basic.showNumber(6)
 })
 WSJoyStick.onKey(KEY.D, function () {
     radio.sendNumber(5)
+    basic.showNumber(5)
 })
 WSJoyStick.onKey(KEY.B, function () {
     radio.sendNumber(3)
+    basic.showNumber(3)
 })
 WSJoyStick.onKey(KEY.C, function () {
     radio.sendNumber(4)
+    basic.showNumber(4)
 })
 buttonClicks.onButtonHeld(buttonClicks.AorB.A, function () {
     while (true) {
