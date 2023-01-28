@@ -1,9 +1,6 @@
 WSJoyStick.onKey(KEY.F, function () {
     radio.sendNumber(7)
 })
-input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
-    radio.sendNumber(17)
-})
 WSJoyStick.onKey(KEY.A, function () {
     radio.sendNumber(2)
 })
@@ -22,8 +19,10 @@ WSJoyStick.onKey(KEY.B, function () {
 WSJoyStick.onKey(KEY.C, function () {
     radio.sendNumber(4)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    radio.sendNumber(16)
+buttonClicks.onButtonHeld(buttonClicks.AorB.A, function () {
+    while (true) {
+        radio.sendNumber(2)
+    }
 })
 WSJoyStick.JoyStickInit()
 radio.setGroup(1)
