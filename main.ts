@@ -22,6 +22,9 @@ WSJoyStick.onKey(KEY.B, function () {
     radio.sendNumber(3)
     basic.showNumber(3)
 })
+input.onGesture(Gesture.Shake, function () {
+    radio.sendNumber(18)
+})
 WSJoyStick.onKey(KEY.C, function () {
     radio.sendNumber(4)
     basic.showNumber(4)
